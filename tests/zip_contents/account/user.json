@@ -1,0 +1,20 @@
+{
+    "id": "123456789012345678",
+    "username": "myself",
+    "discriminator": 1000,
+    "avatar_hash": null,
+    "relationships": [
+        {
+            "id": "234567890123456789",
+            "type": 1,
+            "nickname": null,
+            "user": {
+                "id": "234567890123456789",
+                "username": "myfriend",
+                "avatar": "0108d80108d80108d80108d80108d8",
+                "discriminator": "0001",
+                "public_flags": 1
+            }
+        }
+    ]
+}
