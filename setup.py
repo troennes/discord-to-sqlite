@@ -29,4 +29,9 @@ setup(
     install_requires=["sqlite-utils>=2.8"],
     extras_require={"test": ["pytest"]},
     tests_require=["discord-to-sqlite[test]"],
+    classifiers=[
+        "Programming Language :: Python :: 3",     
+        "Operating System :: OS Independent",
+    ],
+    python_requires='>3.6',
 )
