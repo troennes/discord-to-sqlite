@@ -1,6 +1,5 @@
 import json
 import csv
-import os
 from io import TextIOWrapper
 
 def save_all(db, zf):
@@ -17,7 +16,7 @@ def save_messages(db, zf):
     ]
     for filename in messages:
         # extract channel_id from file path (messages/<id>/messages.csv)
-        channel_id = int(filename.split(os.sep)[1])
+        channel_id = int(filename.split("/")[1])
         
         with zf.open(filename) as csvfile:
             # must convert bytes to text with TextIOWrapper for csv.reader
